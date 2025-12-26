@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Login Box -->
+    <div class="login-box" id="loginBox">
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <p class="link" onclick="showForgot()">Forgot Password?</p>
+        <p id="message"></p>
+    </div>
+
+    <!-- Forgot Password Box -->
+    <div class="login-box" id="forgotBox" style="display:none;">
+        <h2>Reset Password</h2>
+
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <button onclick="resetPassword()">Send Reset Link</button>
+
+        <p class="link" onclick="showLogin()">Back to Login</p>
+        <p id="resetMessage"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
